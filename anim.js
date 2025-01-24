@@ -8,9 +8,8 @@
 // set style IMMEDIATELY without animation
 gsap.set("section:nth-of-type(2)", {
   // shift element outside of viewport
-  x: "-100vw"
+  x: "-100vw",
 });
-
 
 // make image stargate clickable
 // was soll passieren?
@@ -18,11 +17,10 @@ gsap.set("section:nth-of-type(2)", {
 // 1) growe stargate 100% des viewports
 // 2) exchange page content
 document.querySelector("img").onclick = () => {
-
-  const tl = gsap.timeline()
+  const tl = gsap.timeline();
 
   // timeline executed one animation after one another!
-  
+
   // step 1: scale image up
   tl.to("img", {
     width: "100%",
@@ -44,4 +42,4 @@ document.querySelector("img").onclick = () => {
       borderRadius: "50%",
       duration: 2,
     });
-}
+};
